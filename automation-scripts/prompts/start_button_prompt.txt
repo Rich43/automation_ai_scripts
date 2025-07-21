@@ -1,0 +1,1 @@
+In this screenshot, locate the center coordinates of the Windows Start button. Reply as x=###, y=###.

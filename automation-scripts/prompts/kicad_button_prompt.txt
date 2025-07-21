@@ -1,0 +1,1 @@
+In this KiCad window screenshot, locate the center coordinates of the '{element}' button. Reply as x=###, y=###.

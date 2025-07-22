@@ -9,9 +9,13 @@ cd progressive-desktop-automation
 ```
 
 ### 2. Install Requirements
+Install the Python dependencies using the provided file:
 ```bash
-pip install -r requirements.txt
+pip install -r setup_requirements.txt
 ```
+Alternatively, run the platform-specific install script to automatically set up
+a virtual environment and create a convenient `run_*.{bat,sh}` launcher:
+`install_windows.bat`, `install_mac.sh`, or `install_linux.sh`.
 
 ### 3. Set Up OpenAI API Key
 Create a `.env` file:

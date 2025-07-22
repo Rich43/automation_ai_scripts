@@ -1,0 +1,596 @@
+2025-07-22 00:07:14 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 00:07:14 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:07:14 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 00:07:14 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 00:07:14 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:07:14 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 00:07:14 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 00:07:14 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:07:14 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:07:14 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:07:14 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:07:14 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:07:14 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 00:07:14 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 00:07:15 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 00:07:15 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:07:15 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 00:07:15 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 00:07:15 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:07:15 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 00:07:15 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 00:07:15 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:07:15 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:07:15 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:07:15 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:07:15 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:07:15 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 00:07:15 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 00:07:16 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:07:16 | system_detector | INFO | is_software_installed:81 | Git found in PATH
+2025-07-22 00:07:16 | system_detector | INFO | is_software_installed:81 | Python found in PATH
+2025-07-22 00:07:16 | system_detector | INFO | is_software_installed:81 | Visual Studio Code found in PATH
+2025-07-22 00:07:54 | challenge_manager | INFO | run_challenge:90 | Starting challenge level 1: System Detection
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:56 | Starting challenge 'System Detection' with 6 steps
+2025-07-22 00:07:54 | Challenge1 | INFO | pre_challenge_setup:108 | Performing pre-challenge setup
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:67 | Executing step 1/6: Initialize system detector
+2025-07-22 00:07:54 | Challenge1 | INFO | _initialize_detector:64 | Initializing system detector...
+2025-07-22 00:07:54 | Challenge1 | INFO | _initialize_detector:68 | Detected platform: Linux 6.2.16
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:76 | Step 1 completed successfully
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:67 | Executing step 2/6: Get platform information
+2025-07-22 00:07:54 | Challenge1 | INFO | _get_platform_info:79 | Gathering platform information...
+2025-07-22 00:07:54 | Challenge1 | INFO | _get_platform_info:83 | System: Linux
+2025-07-22 00:07:54 | Challenge1 | INFO | _get_platform_info:84 | Release: 6.2.16
+2025-07-22 00:07:54 | Challenge1 | INFO | _get_platform_info:85 | Version: #1-NixOS SMP PREEMPT_DYNAMIC Tue Jan  1 00:00:00 UTC 1980
+2025-07-22 00:07:54 | Challenge1 | INFO | _get_platform_info:86 | Machine: x86_64
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:76 | Step 2 completed successfully
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:67 | Executing step 3/6: Check system paths
+2025-07-22 00:07:54 | Challenge1 | INFO | _check_system_paths:100 | Checking system paths...
+2025-07-22 00:07:54 | Challenge1 | INFO | _check_system_paths:112 | Home path: /home/runner (exists: True)
+2025-07-22 00:07:54 | Challenge1 | INFO | _check_system_paths:112 | Temp path: /tmp (exists: True)
+2025-07-22 00:07:54 | Challenge1 | INFO | _check_system_paths:112 | Desktop path: /home/runner/Desktop (exists: False)
+2025-07-22 00:07:54 | Challenge1 | WARNING | _check_system_paths:114 | Programs path not defined
+2025-07-22 00:07:54 | Challenge1 | INFO | _check_system_paths:112 | Downloads path: /home/runner/Downloads (exists: False)
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:76 | Step 3 completed successfully
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:67 | Executing step 4/6: Detect installed software
+2025-07-22 00:07:54 | Challenge1 | INFO | _detect_installed_software:130 | Detecting installed software...
+2025-07-22 00:07:54 | system_detector | INFO | is_software_installed:81 | Git found in PATH
+2025-07-22 00:07:54 | system_detector | INFO | is_software_installed:81 | Python found in PATH
+2025-07-22 00:07:54 | system_detector | INFO | is_software_installed:81 | Visual Studio Code found in PATH
+2025-07-22 00:07:54 | Challenge1 | INFO | _detect_installed_software:134 | Found 3 installed applications:
+2025-07-22 00:07:54 | Challenge1 | INFO | _detect_installed_software:137 |   - Git: found_in_path
+2025-07-22 00:07:54 | Challenge1 | INFO | _detect_installed_software:137 |   - Python: found_in_path
+2025-07-22 00:07:54 | Challenge1 | INFO | _detect_installed_software:137 |   - Visual Studio Code: found_in_path
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:76 | Step 4 completed successfully
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:67 | Executing step 5/6: Verify KiCad installation
+2025-07-22 00:07:54 | Challenge1 | INFO | _verify_kicad_installation:151 | Verifying KiCad installation...
+2025-07-22 00:07:54 | Challenge1 | WARNING | _verify_kicad_installation:160 | ✗ KiCad is not installed: not_found (checked: dpkg, directory_search)
+2025-07-22 00:07:54 | Challenge1 | INFO | _verify_kicad_installation:166 | KiCad currently running: False
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:76 | Step 5 completed successfully
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:67 | Executing step 6/6: Generate detection report
+2025-07-22 00:07:54 | Challenge1 | INFO | _generate_detection_report:178 | Generating detection report...
+2025-07-22 00:07:54 | Challenge1 | INFO | _generate_detection_report:195 | === SYSTEM DETECTION REPORT ===
+2025-07-22 00:07:54 | Challenge1 | INFO | _generate_detection_report:196 | Platform: Linux 6.2.16
+2025-07-22 00:07:54 | Challenge1 | INFO | _generate_detection_report:197 | Total software detected: 3
+2025-07-22 00:07:54 | Challenge1 | INFO | _generate_detection_report:198 | KiCad installed: False
+2025-07-22 00:07:54 | Challenge1 | INFO | _generate_detection_report:199 | Challenge result: NEEDS_INSTALLATION
+2025-07-22 00:07:54 | Challenge1 | WARNING | _generate_detection_report:202 | KiCad not found - Level 2 (Software Installation) will be required
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:76 | Step 6 completed successfully
+2025-07-22 00:07:54 | Challenge1 | INFO | post_challenge_cleanup:226 | System detection completed - no cleanup required
+2025-07-22 00:07:54 | Challenge1 | INFO | post_challenge_cleanup:233 | Next recommended challenge: Level 2 (Software Installation)
+2025-07-22 00:07:54 | Challenge1 | INFO | execute:87 | Challenge 'System Detection' completed successfully
+2025-07-22 00:07:54 | challenge_manager | INFO | run_challenge:110 | Challenge level 1 completed successfully
+2025-07-22 00:12:38 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 00:12:38 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:12:38 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 00:12:38 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 00:12:38 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:12:38 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 00:12:38 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 00:12:38 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:12:38 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:12:38 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:12:38 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:12:38 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:12:38 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 00:12:38 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 00:12:38 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 00:12:38 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:12:38 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 00:12:38 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 00:12:38 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:12:38 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 00:12:38 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 00:12:39 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:12:39 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:12:39 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:12:39 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:12:39 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 00:12:39 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 00:12:39 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 00:12:40 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:12:40 | system_detector | INFO | is_software_installed:81 | Git found in PATH
+2025-07-22 00:12:40 | system_detector | INFO | is_software_installed:81 | Python found in PATH
+2025-07-22 00:12:40 | system_detector | INFO | is_software_installed:81 | Visual Studio Code found in PATH
+2025-07-22 00:13:57 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 00:13:57 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:13:57 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 00:13:57 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 00:13:57 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:13:57 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 00:13:57 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 00:13:58 | Challenge3 | INFO | __init__:33 | Initialized challenge: Application Launch
+2025-07-22 00:13:58 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:13:58 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: 'AutomationEngine' object has no attribute '_setup_display_environment'
+2025-07-22 00:13:58 | Challenge4 | INFO | __init__:33 | Initialized challenge: Basic UI Navigation
+2025-07-22 00:13:58 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:13:58 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: 'AutomationEngine' object has no attribute '_setup_display_environment'
+2025-07-22 00:13:58 | Challenge5 | INFO | __init__:33 | Initialized challenge: Complex Task Execution
+2025-07-22 00:13:58 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:13:58 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: 'AutomationEngine' object has no attribute '_setup_display_environment'
+2025-07-22 00:13:58 | Challenge6 | INFO | __init__:33 | Initialized challenge: File Management
+2025-07-22 00:13:58 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:13:58 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: 'AutomationEngine' object has no attribute '_setup_display_environment'
+2025-07-22 00:13:58 | Challenge7 | INFO | __init__:33 | Initialized challenge: Advanced Operations
+2025-07-22 00:13:58 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:13:58 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: 'AutomationEngine' object has no attribute '_setup_display_environment'
+2025-07-22 00:13:58 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 00:13:58 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 00:14:12 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 00:14:12 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:14:12 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 00:14:12 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 00:14:12 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:14:12 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 00:14:12 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 00:14:12 | Challenge3 | INFO | __init__:33 | Initialized challenge: Application Launch
+2025-07-22 00:14:12 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:14:12 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:14:12 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:14:12 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:14:12 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 3: Level3ApplicationLaunch
+2025-07-22 00:14:12 | Challenge4 | INFO | __init__:33 | Initialized challenge: Basic UI Navigation
+2025-07-22 00:14:12 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:14:12 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:14:12 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:14:12 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:14:12 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 4: Level4UiNavigation
+2025-07-22 00:14:12 | Challenge5 | INFO | __init__:33 | Initialized challenge: Complex Task Execution
+2025-07-22 00:14:12 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:14:12 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:14:12 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:14:12 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:14:12 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 5: Level5ComplexTasks
+2025-07-22 00:14:12 | Challenge6 | INFO | __init__:33 | Initialized challenge: File Management
+2025-07-22 00:14:12 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:14:12 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:14:12 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:14:12 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:14:12 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 6: Level6FileManagement
+2025-07-22 00:14:12 | Challenge7 | INFO | __init__:33 | Initialized challenge: Advanced Operations
+2025-07-22 00:14:12 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:14:12 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:14:12 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:14:12 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:14:12 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 7: Level7AdvancedOperations
+2025-07-22 00:14:12 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 7 challenges
+2025-07-22 00:14:12 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 00:15:14 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 00:15:14 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:14 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 00:15:14 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 00:15:14 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:14 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 00:15:14 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 00:15:15 | Challenge3 | INFO | __init__:33 | Initialized challenge: Application Launch
+2025-07-22 00:15:15 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:15:15 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:15:15 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:15:15 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:15 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 3: Level3ApplicationLaunch
+2025-07-22 00:15:15 | Challenge4 | INFO | __init__:33 | Initialized challenge: Basic UI Navigation
+2025-07-22 00:15:15 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:15:15 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:15:15 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:15:15 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:15 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 4: Level4UiNavigation
+2025-07-22 00:15:15 | Challenge5 | INFO | __init__:33 | Initialized challenge: Complex Task Execution
+2025-07-22 00:15:15 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:15:15 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:15:15 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:15:15 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:15 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 5: Level5ComplexTasks
+2025-07-22 00:15:15 | Challenge6 | INFO | __init__:33 | Initialized challenge: File Management
+2025-07-22 00:15:15 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:15:15 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:15:15 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:15:15 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:15 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 6: Level6FileManagement
+2025-07-22 00:15:15 | Challenge7 | INFO | __init__:33 | Initialized challenge: Advanced Operations
+2025-07-22 00:15:15 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:15:15 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:15:15 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:15:15 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:15 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 7: Level7AdvancedOperations
+2025-07-22 00:15:15 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 7 challenges
+2025-07-22 00:15:15 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 00:15:15 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 00:15:15 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:15 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 00:15:15 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 00:15:15 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:15 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 00:15:15 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 00:15:16 | Challenge3 | INFO | __init__:33 | Initialized challenge: Application Launch
+2025-07-22 00:15:16 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:15:16 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:15:16 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:15:16 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:16 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 3: Level3ApplicationLaunch
+2025-07-22 00:15:16 | Challenge4 | INFO | __init__:33 | Initialized challenge: Basic UI Navigation
+2025-07-22 00:15:16 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:15:16 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:15:16 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:15:16 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:16 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 4: Level4UiNavigation
+2025-07-22 00:15:16 | Challenge5 | INFO | __init__:33 | Initialized challenge: Complex Task Execution
+2025-07-22 00:15:16 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:15:16 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:15:16 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:15:16 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:16 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 5: Level5ComplexTasks
+2025-07-22 00:15:16 | Challenge6 | INFO | __init__:33 | Initialized challenge: File Management
+2025-07-22 00:15:16 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:15:16 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:15:16 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:15:16 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:16 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 6: Level6FileManagement
+2025-07-22 00:15:16 | Challenge7 | INFO | __init__:33 | Initialized challenge: Advanced Operations
+2025-07-22 00:15:16 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:15:16 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:15:16 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:15:16 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:16 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 7: Level7AdvancedOperations
+2025-07-22 00:15:16 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 7 challenges
+2025-07-22 00:15:16 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 00:15:16 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:16 | system_detector | INFO | is_software_installed:81 | Git found in PATH
+2025-07-22 00:15:16 | system_detector | INFO | is_software_installed:81 | Python found in PATH
+2025-07-22 00:15:16 | system_detector | INFO | is_software_installed:81 | Visual Studio Code found in PATH
+2025-07-22 00:15:17 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:15:17 | system_detector | INFO | is_software_installed:81 | Git found in PATH
+2025-07-22 00:15:17 | system_detector | INFO | is_software_installed:81 | Python found in PATH
+2025-07-22 00:15:17 | system_detector | INFO | is_software_installed:81 | Visual Studio Code found in PATH
+2025-07-22 00:22:27 | challenge_manager | INFO | run_challenge:90 | Starting challenge level 1: System Detection
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:56 | Starting challenge 'System Detection' with 6 steps
+2025-07-22 00:22:27 | Challenge1 | INFO | pre_challenge_setup:108 | Performing pre-challenge setup
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:67 | Executing step 1/6: Initialize system detector
+2025-07-22 00:22:27 | Challenge1 | INFO | _initialize_detector:64 | Initializing system detector...
+2025-07-22 00:22:27 | Challenge1 | INFO | _initialize_detector:68 | Detected platform: Linux 6.2.16
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:76 | Step 1 completed successfully
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:67 | Executing step 2/6: Get platform information
+2025-07-22 00:22:27 | Challenge1 | INFO | _get_platform_info:79 | Gathering platform information...
+2025-07-22 00:22:27 | Challenge1 | INFO | _get_platform_info:83 | System: Linux
+2025-07-22 00:22:27 | Challenge1 | INFO | _get_platform_info:84 | Release: 6.2.16
+2025-07-22 00:22:27 | Challenge1 | INFO | _get_platform_info:85 | Version: #1-NixOS SMP PREEMPT_DYNAMIC Tue Jan  1 00:00:00 UTC 1980
+2025-07-22 00:22:27 | Challenge1 | INFO | _get_platform_info:86 | Machine: x86_64
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:76 | Step 2 completed successfully
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:67 | Executing step 3/6: Check system paths
+2025-07-22 00:22:27 | Challenge1 | INFO | _check_system_paths:100 | Checking system paths...
+2025-07-22 00:22:27 | Challenge1 | INFO | _check_system_paths:112 | Home path: /home/runner (exists: True)
+2025-07-22 00:22:27 | Challenge1 | INFO | _check_system_paths:112 | Temp path: /tmp (exists: True)
+2025-07-22 00:22:27 | Challenge1 | INFO | _check_system_paths:112 | Desktop path: /home/runner/Desktop (exists: False)
+2025-07-22 00:22:27 | Challenge1 | WARNING | _check_system_paths:114 | Programs path not defined
+2025-07-22 00:22:27 | Challenge1 | INFO | _check_system_paths:112 | Downloads path: /home/runner/Downloads (exists: False)
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:76 | Step 3 completed successfully
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:67 | Executing step 4/6: Detect installed software
+2025-07-22 00:22:27 | Challenge1 | INFO | _detect_installed_software:130 | Detecting installed software...
+2025-07-22 00:22:27 | system_detector | INFO | is_software_installed:81 | Git found in PATH
+2025-07-22 00:22:27 | system_detector | INFO | is_software_installed:81 | Python found in PATH
+2025-07-22 00:22:27 | system_detector | INFO | is_software_installed:81 | Visual Studio Code found in PATH
+2025-07-22 00:22:27 | Challenge1 | INFO | _detect_installed_software:134 | Found 3 installed applications:
+2025-07-22 00:22:27 | Challenge1 | INFO | _detect_installed_software:137 |   - Git: found_in_path
+2025-07-22 00:22:27 | Challenge1 | INFO | _detect_installed_software:137 |   - Python: found_in_path
+2025-07-22 00:22:27 | Challenge1 | INFO | _detect_installed_software:137 |   - Visual Studio Code: found_in_path
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:76 | Step 4 completed successfully
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:67 | Executing step 5/6: Verify KiCad installation
+2025-07-22 00:22:27 | Challenge1 | INFO | _verify_kicad_installation:151 | Verifying KiCad installation...
+2025-07-22 00:22:27 | Challenge1 | WARNING | _verify_kicad_installation:160 | ✗ KiCad is not installed: not_found (checked: dpkg, directory_search)
+2025-07-22 00:22:27 | Challenge1 | INFO | _verify_kicad_installation:166 | KiCad currently running: False
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:76 | Step 5 completed successfully
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:67 | Executing step 6/6: Generate detection report
+2025-07-22 00:22:27 | Challenge1 | INFO | _generate_detection_report:178 | Generating detection report...
+2025-07-22 00:22:27 | Challenge1 | INFO | _generate_detection_report:195 | === SYSTEM DETECTION REPORT ===
+2025-07-22 00:22:27 | Challenge1 | INFO | _generate_detection_report:196 | Platform: Linux 6.2.16
+2025-07-22 00:22:27 | Challenge1 | INFO | _generate_detection_report:197 | Total software detected: 3
+2025-07-22 00:22:27 | Challenge1 | INFO | _generate_detection_report:198 | KiCad installed: False
+2025-07-22 00:22:27 | Challenge1 | INFO | _generate_detection_report:199 | Challenge result: NEEDS_INSTALLATION
+2025-07-22 00:22:27 | Challenge1 | WARNING | _generate_detection_report:202 | KiCad not found - Level 2 (Software Installation) will be required
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:76 | Step 6 completed successfully
+2025-07-22 00:22:27 | Challenge1 | INFO | post_challenge_cleanup:226 | System detection completed - no cleanup required
+2025-07-22 00:22:27 | Challenge1 | INFO | post_challenge_cleanup:233 | Next recommended challenge: Level 2 (Software Installation)
+2025-07-22 00:22:27 | Challenge1 | INFO | execute:87 | Challenge 'System Detection' completed successfully
+2025-07-22 00:22:27 | challenge_manager | INFO | run_challenge:110 | Challenge level 1 completed successfully
+2025-07-22 00:22:31 | challenge_manager | INFO | run_challenge:90 | Starting challenge level 2: Software Installation
+2025-07-22 00:22:31 | Challenge2 | INFO | execute:56 | Starting challenge 'Software Installation' with 6 steps
+2025-07-22 00:22:31 | Challenge2 | INFO | pre_challenge_setup:108 | Performing pre-challenge setup
+2025-07-22 00:22:31 | Challenge2 | INFO | execute:67 | Executing step 1/6: Verify system detection results
+2025-07-22 00:22:31 | Challenge2 | INFO | _verify_system_detection:63 | Verifying system detection results...
+2025-07-22 00:22:31 | Challenge2 | INFO | _verify_system_detection:67 | Platform confirmed: Linux 6.2.16
+2025-07-22 00:22:31 | Challenge2 | INFO | _verify_system_detection:73 | Linux platform detected - may require sudo privileges
+2025-07-22 00:22:31 | Challenge2 | INFO | execute:76 | Step 1 completed successfully
+2025-07-22 00:22:31 | Challenge2 | INFO | execute:67 | Executing step 2/6: Check current KiCad installation status
+2025-07-22 00:22:31 | Challenge2 | INFO | _check_kicad_status:87 | Checking current KiCad installation status...
+2025-07-22 00:22:31 | Challenge2 | INFO | _check_kicad_status:91 | KiCad installation status: False
+2025-07-22 00:22:31 | Challenge2 | INFO | _check_kicad_status:92 | Details: not_found (checked: dpkg, directory_search)
+2025-07-22 00:22:31 | Challenge2 | INFO | _check_kicad_status:98 | KiCad not found - proceeding with installation
+2025-07-22 00:22:31 | Challenge2 | INFO | execute:76 | Step 2 completed successfully
+2025-07-22 00:22:31 | Challenge2 | INFO | execute:67 | Executing step 3/6: Prepare installation environment
+2025-07-22 00:22:31 | Challenge2 | INFO | _prepare_installation:113 | Preparing installation environment...
+2025-07-22 00:22:31 | Challenge2 | INFO | _prepare_installation:125 | Available disk space: 31.48 GB
+2025-07-22 00:22:31 | Challenge2 | INFO | _prepare_installation:136 | Internet connectivity confirmed
+2025-07-22 00:22:31 | Challenge2 | INFO | execute:76 | Step 3 completed successfully
+2025-07-22 00:22:31 | Challenge2 | INFO | execute:67 | Executing step 4/6: Install KiCad
+2025-07-22 00:22:31 | Challenge2 | INFO | _install_kicad:151 | Starting KiCad installation...
+2025-07-22 00:22:31 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 00:22:31 | software_installer | INFO | install_software:87 | Starting installation of kicad on linux
+2025-07-22 00:22:32 | software_installer | INFO | _install_via_apt:268 | Installing via apt: sudo apt install -y kicad
+2025-07-22 00:22:32 | Challenge2 | INFO | _install_kicad:162 | Installation completed in 0.1 seconds
+2025-07-22 00:22:32 | Challenge2 | INFO | _install_kicad:163 | Installation result: False
+2025-07-22 00:22:32 | Challenge2 | INFO | _install_kicad:164 | Installation details: apt installation failed: [0;93mTools like apt, brew, and yum which modify system dependencies are not directly callable inside Replit. We offer the [1;93mSystem Dependencies[0;93m
+pane for easy dependency management.
+
+For more information, please check https://docs.replit.com/replit-workspace/dependency-management , and don't forget to indicate whether you found the
+documentation helpful at the bottom of the page!
+[0m
+
+2025-07-22 00:22:32 | Challenge2 | ERROR | _install_kicad:171 | ✗ KiCad installation failed: apt installation failed: [0;93mTools like apt, brew, and yum which modify system dependencies are not directly callable inside Replit. We offer the [1;93mSystem Dependencies[0;93m
+pane for easy dependency management.
+
+For more information, please check https://docs.replit.com/replit-workspace/dependency-management , and don't forget to indicate whether you found the
+documentation helpful at the bottom of the page!
+[0m
+
+2025-07-22 00:22:32 | Challenge2 | INFO | take_error_screenshot:148 | Error screenshot saved: error_screenshots/challenge_2_installation_failed_1753143752.png
+2025-07-22 00:22:32 | Challenge2 | ERROR | execute:79 | Step 4 failed: Step 4 failed: Install KiCad
+2025-07-22 00:22:32 | Challenge2 | ERROR | execute:94 | Challenge 'Software Installation' failed: Step 4 failed: Install KiCad
+2025-07-22 00:22:32 | Challenge2 | INFO | post_challenge_cleanup:300 | Software installation challenge completed
+2025-07-22 00:22:32 | Challenge2 | ERROR | post_challenge_cleanup:314 | ✗ KiCad installation failed
+2025-07-22 00:22:32 | Challenge2 | ERROR | post_challenge_cleanup:315 | Manual installation may be required before proceeding
+2025-07-22 00:22:32 | challenge_manager | ERROR | run_challenge:115 | Challenge level 2 failed
+2025-07-22 00:23:21 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:23:21 | automation_engine | INFO | __init__:29 | GUI environment detected
+2025-07-22 00:23:21 | automation_engine | INFO | __init__:34 | Automation engine initialized (headless: False)
+2025-07-22 00:23:21 | vision_analyzer | INFO | __init__:19 | Vision analyzer initialized with GPT-4o
+2025-07-22 00:23:21 | __main__ | INFO | generate_automation_report:179 | Generating automation demonstration report
+2025-07-22 00:23:21 | __main__ | INFO | simulate_kicad_workflow:25 | Starting KiCad automation demonstration
+2025-07-22 00:23:21 | __main__ | INFO | simulate_kicad_workflow:49 | Step  1/18: 1. Open KiCad Project Manager
+2025-07-22 00:23:21 | __main__ | INFO | simulate_kicad_workflow:65 |   → AI Vision: Locating KiCad Project Manager in interface
+2025-07-22 00:23:21 | __main__ | INFO | simulate_kicad_workflow:66 |   → AI Vision: Clicking to open KiCad Project Manager
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:49 | Step  2/18: 2. Create new project: cr2032_led_circuit
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:49 | Step  3/18: 3. Open Schematic Editor (Eeschema)
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:65 |   → AI Vision: Locating Schematic Editor (Eeschema) in interface
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:66 |   → AI Vision: Clicking to open Schematic Editor (Eeschema)
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:49 | Step  4/18: 4. Place CR2032 battery symbol
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:54 |   → AI Vision: Locating component library for CR2032 battery
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:55 |   → AI Vision: Finding CR2032 battery in component browser
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:56 |   → AI Vision: Placing CR2032 battery at optimal position
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:49 | Step  5/18: 5. Place momentary switch symbol
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:54 |   → AI Vision: Locating component library for momentary switch
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:55 |   → AI Vision: Finding momentary switch in component browser
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:56 |   → AI Vision: Placing momentary switch at optimal position
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:49 | Step  6/18: 6. Place LED symbol
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:54 |   → AI Vision: Locating component library for LED
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:55 |   → AI Vision: Finding LED in component browser
+2025-07-22 00:23:22 | __main__ | INFO | simulate_kicad_workflow:56 |   → AI Vision: Placing LED at optimal position
+2025-07-22 00:23:23 | __main__ | INFO | simulate_kicad_workflow:49 | Step  7/18: 7. Place 330R resistor symbol
+2025-07-22 00:23:23 | __main__ | INFO | simulate_kicad_workflow:54 |   → AI Vision: Locating component library for 330R resistor
+2025-07-22 00:23:23 | __main__ | INFO | simulate_kicad_workflow:55 |   → AI Vision: Finding 330R resistor in component browser
+2025-07-22 00:23:23 | __main__ | INFO | simulate_kicad_workflow:56 |   → AI Vision: Placing 330R resistor at optimal position
+2025-07-22 00:23:23 | __main__ | INFO | simulate_kicad_workflow:49 | Step  8/18: 8. Wire components together
+2025-07-22 00:23:23 | __main__ | INFO | simulate_kicad_workflow:59 |   → AI Vision: Analyzing component pin locations
+2025-07-22 00:23:23 | __main__ | INFO | simulate_kicad_workflow:60 |   → AI Vision: Planning optimal wire routing
+2025-07-22 00:23:23 | __main__ | INFO | simulate_kicad_workflow:61 |   → AI Vision: Drawing wires between pins
+2025-07-22 00:23:23 | __main__ | INFO | simulate_kicad_workflow:49 | Step  9/18: 9. Add power symbols (+BATT, GND)
+2025-07-22 00:23:23 | __main__ | INFO | simulate_kicad_workflow:49 | Step 10/18: 10. Run electrical rules check (ERC)
+2025-07-22 00:23:23 | __main__ | INFO | simulate_kicad_workflow:49 | Step 11/18: 11. Generate netlist
+2025-07-22 00:23:24 | __main__ | INFO | simulate_kicad_workflow:49 | Step 12/18: 12. Open PCB Editor (Pcbnew)
+2025-07-22 00:23:24 | __main__ | INFO | simulate_kicad_workflow:65 |   → AI Vision: Locating PCB Editor (Pcbnew) in interface
+2025-07-22 00:23:24 | __main__ | INFO | simulate_kicad_workflow:66 |   → AI Vision: Clicking to open PCB Editor (Pcbnew)
+2025-07-22 00:23:24 | __main__ | INFO | simulate_kicad_workflow:49 | Step 13/18: 13. Load netlist into PCB
+2025-07-22 00:23:24 | __main__ | INFO | simulate_kicad_workflow:49 | Step 14/18: 14. Arrange components on PCB
+2025-07-22 00:23:24 | __main__ | INFO | simulate_kicad_workflow:49 | Step 15/18: 15. Route traces between pads
+2025-07-22 00:23:24 | __main__ | INFO | simulate_kicad_workflow:69 |   → AI Vision: Analyzing PCB layout for trace routing
+2025-07-22 00:23:24 | __main__ | INFO | simulate_kicad_workflow:70 |   → AI Vision: Finding shortest paths between pads
+2025-07-22 00:23:24 | __main__ | INFO | simulate_kicad_workflow:71 |   → AI Vision: Drawing copper traces
+2025-07-22 00:23:25 | __main__ | INFO | simulate_kicad_workflow:49 | Step 16/18: 16. Add copper fills/zones
+2025-07-22 00:23:25 | __main__ | INFO | simulate_kicad_workflow:49 | Step 17/18: 17. Run design rules check (DRC)
+2025-07-22 00:23:25 | __main__ | INFO | simulate_kicad_workflow:49 | Step 18/18: 18. Generate Gerber files for manufacturing
+2025-07-22 00:23:25 | __main__ | INFO | simulate_kicad_workflow:76 | KiCad automation workflow completed successfully
+2025-07-22 00:23:25 | __main__ | INFO | analyze_circuit_files:81 | Analyzing generated KiCad circuit files
+2025-07-22 00:23:25 | __main__ | INFO | analyze_circuit_files:96 |   ✓ cr2032_led_circuit.sch: 2481 bytes
+2025-07-22 00:23:25 | __main__ | INFO | analyze_circuit_files:96 |   ✓ cr2032_led_circuit.kicad_pcb: 5644 bytes
+2025-07-22 00:23:25 | __main__ | INFO | analyze_circuit_files:96 |   ✓ cr2032_led_circuit.pro: 690 bytes
+2025-07-22 00:23:25 | __main__ | INFO | analyze_circuit_files:96 |   ✓ README.md: 745 bytes
+2025-07-22 00:23:25 | __main__ | INFO | generate_automation_report:225 | Automation report saved to: automation_report.json
+2025-07-22 00:23:25 | __main__ | INFO | generate_automation_report:228 | === AUTOMATION DEMONSTRATION SUMMARY ===
+2025-07-22 00:23:25 | __main__ | INFO | generate_automation_report:229 | Workflow Status: ✓ SUCCESS
+2025-07-22 00:23:25 | __main__ | INFO | generate_automation_report:230 | Files Generated: 4 files
+2025-07-22 00:23:25 | __main__ | INFO | generate_automation_report:231 | Circuit Components: 4
+2025-07-22 00:23:25 | __main__ | INFO | generate_automation_report:232 | PCB Modules: 4
+2025-07-22 00:23:25 | __main__ | INFO | generate_automation_report:233 | PCB Tracks: 5
+2025-07-22 00:23:25 | __main__ | INFO | generate_automation_report:234 | === END DEMONSTRATION ===
+2025-07-22 01:25:59 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 01:25:59 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 01:25:59 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 01:25:59 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 01:25:59 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 01:25:59 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 01:25:59 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 01:25:59 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:25:59 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:25:59 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:25:59 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:25:59 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:25:59 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 01:25:59 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 01:25:59 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 01:25:59 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 01:25:59 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 01:25:59 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 01:25:59 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 01:25:59 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 01:25:59 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 01:26:00 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:26:00 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:26:00 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:26:00 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:26:00 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:26:00 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 01:26:00 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 01:26:01 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 01:26:01 | system_detector | INFO | is_software_installed:81 | Git found in PATH
+2025-07-22 01:26:01 | system_detector | INFO | is_software_installed:81 | Python found in PATH
+2025-07-22 01:26:01 | system_detector | INFO | is_software_installed:81 | Visual Studio Code found in PATH
+2025-07-22 01:27:37 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 01:27:37 | system_detector | INFO | is_software_installed:81 | Git found in PATH
+2025-07-22 01:27:37 | system_detector | INFO | is_software_installed:81 | Python found in PATH
+2025-07-22 01:27:37 | system_detector | INFO | is_software_installed:81 | Visual Studio Code found in PATH
+2025-07-22 01:51:01 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 01:51:01 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 01:51:01 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 01:51:01 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 01:51:01 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 01:51:01 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 01:51:01 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 01:51:01 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:51:01 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:51:01 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:51:01 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:51:01 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:51:01 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 01:51:01 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 01:51:01 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 01:51:01 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 01:51:01 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 01:51:01 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 01:51:01 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 01:51:01 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 01:51:01 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 01:51:01 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:51:01 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:51:01 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:51:01 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:51:01 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 01:51:01 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 01:51:01 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 01:51:02 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 01:51:02 | system_detector | INFO | is_software_installed:81 | Git found in PATH
+2025-07-22 01:51:02 | system_detector | INFO | is_software_installed:81 | Python found in PATH
+2025-07-22 01:51:02 | system_detector | INFO | is_software_installed:81 | Visual Studio Code found in PATH
+2025-07-22 02:08:33 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 02:08:33 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:08:33 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 02:08:33 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 02:08:33 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:08:33 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 02:08:33 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 02:08:33 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:08:33 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:08:33 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:08:33 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:08:33 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:08:33 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 02:08:33 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 02:08:34 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 02:08:34 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:08:34 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 02:08:34 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 02:08:34 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:08:34 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 02:08:34 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 02:08:34 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:08:34 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:08:34 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:08:34 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:08:34 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:08:34 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 02:08:34 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 02:08:35 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:08:35 | system_detector | INFO | is_software_installed:81 | Git found in PATH
+2025-07-22 02:08:35 | system_detector | INFO | is_software_installed:81 | Python found in PATH
+2025-07-22 02:08:35 | system_detector | INFO | is_software_installed:81 | Visual Studio Code found in PATH
+2025-07-22 02:19:06 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 02:19:06 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:19:06 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 02:19:07 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 02:19:07 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:19:07 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 02:19:07 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 02:19:07 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:19:07 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:19:07 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:19:07 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:19:07 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:19:07 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 02:19:07 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 02:21:05 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 02:21:05 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:21:05 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 02:21:05 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 02:21:05 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:21:05 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 02:21:05 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 02:21:05 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:05 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:05 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:05 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:05 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:05 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 02:21:05 | __main__ | INFO | <module>:147 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 02:21:28 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 02:21:28 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:21:28 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 02:21:28 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 02:21:28 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:21:28 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 02:21:28 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 02:21:28 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:28 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:28 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:28 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:28 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:28 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 02:21:29 | __main__ | INFO | <module>:243 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 02:21:40 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 02:21:40 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:21:40 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 02:21:40 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 02:21:40 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:21:40 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 02:21:40 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 02:21:40 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:40 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:40 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:40 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:40 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:40 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 02:21:40 | __main__ | INFO | <module>:243 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 02:21:41 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-22 02:21:41 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:21:41 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-22 02:21:41 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-22 02:21:41 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:21:41 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-22 02:21:41 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-22 02:21:41 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:41 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:41 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:41 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:41 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-22 02:21:41 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-22 02:21:41 | __main__ | INFO | <module>:243 | Starting Progressive Desktop Automation Challenge System
+2025-07-22 02:21:42 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-22 02:21:42 | system_detector | INFO | is_software_installed:81 | Git found in PATH
+2025-07-22 02:21:42 | system_detector | INFO | is_software_installed:81 | Python found in PATH
+2025-07-22 02:21:42 | system_detector | INFO | is_software_installed:81 | Visual Studio Code found in PATH

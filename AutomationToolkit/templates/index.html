@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Desktop Automation Challenge System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <meta name="description" content="AI-driven progressive automation challenge system for desktop applications">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>🤖 Progressive Desktop Automation</h1>
+            <p class="subtitle">AI-Driven Challenge System for Complex Desktop Workflows</p>
+            <div class="system-status" id="system-status">
+                <span class="icon">⚡</span>
+                <span id="status-text">Initializing...</span>
+            </div>
+        </header>
+
+        <!-- Progress Overview -->
+        <section class="progress-section">
+            <h2>Overall Progress</h2>
+            <div class="overall-progress">
+                <div class="overall-progress-bar">
+                    <div class="overall-progress-fill" id="overall-progress-fill" style="width: 0%">
+                        <div class="progress-text" id="overall-progress-text">0/7 Challenges (0%)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="challenge-stats" id="challenge-stats">
+                <div class="stat-item">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Running</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Failed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">0%</div>
+                    <div class="stat-label">Progress</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Control Panel -->
+        <section class="controls-section">
+            <h2>🎮 Control Panel</h2>
+            <div class="controls-grid">
+                <div class="control-group">
+                    <label>Challenge Control</label>
+                    <button class="btn btn-primary" id="run-all-challenges">
+                        <span class="icon">▶</span> Run All Challenges
+                    </button>
+                    <button class="btn btn-warning" id="pause-execution">
+                        <span class="icon">⏸</span> Pause Execution
+                    </button>
+                    <button class="btn btn-danger" id="stop-all-challenges">
+                        <span class="icon">⏹</span> Stop All
+                    </button>
+                </div>
+                
+                <div class="control-group">
+                    <label>System Monitoring</label>
+                    <button class="btn btn-secondary" id="take-screenshot">
+                        <span class="icon">📷</span> Take Screenshot
+                    </button>
+                    <button class="btn btn-secondary" id="refresh-data">
+                        <span class="icon">🔄</span> Refresh Data
+                    </button>
+                    <button class="btn btn-secondary" id="clear-logs">
+                        <span class="icon">🗑</span> Clear Logs
+                    </button>
+                </div>
+                
+                <div class="control-group">
+                    <label>Settings</label>
+                    <button class="btn btn-secondary" id="config-settings">
+                        <span class="icon">⚙️</span> Configuration
+                    </button>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="auto-refresh" checked>
+                        <label for="auto-refresh">Auto-refresh (3s)</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="debug-mode">
+                        <label for="debug-mode">Debug Mode</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Grid -->
+        <div class="main-content">
+            <!-- Challenges Panel -->
+            <div class="card">
+                <h2>🎯 Challenge Levels</h2>
+                <div class="challenges-grid" id="challenges-container">
+                    <!-- Challenges will be loaded dynamically -->
+                    <div class="challenge-item loading">
+                        <div class="loading"></div>
+                        Loading challenges...
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Logs -->
+            <div class="card">
+                <h2>📋 Activity Logs</h2>
+                <div class="logs-container" id="logs-container">
+                    <div class="log-entry log-info">
+                        <span class="log-timestamp">[00:00:00]</span>
+                        <span class="log-message">System initializing...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Information -->
+        <section class="system-info">
+            <h2>💻 System Information</h2>
+            <div id="system-info-container">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Platform</div>
+                        <div class="info-value">Loading...</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Status</div>
+                        <div class="info-value">Initializing</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshot Display -->
+        <section class="screenshot-section">
+            <h2>📸 Current Desktop View</h2>
+            <div class="screenshot-container" id="screenshot-container">
+                <p>Click "Take Screenshot" to capture current desktop state</p>
+            </div>
+        </section>
+
+        <!-- Challenge Details Modal (Hidden by default) -->
+        <div id="challenge-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modal-title">Challenge Details</h3>
+                    <button class="modal-close" onclick="closeModal()">&times;</button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <!-- Challenge details will be populated here -->
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Configuration Modal -->
+        <div id="config-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>⚙️ Configuration Settings</h3>
+                    <button class="modal-close" onclick="closeConfigModal()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="config-form">
+                        <div class="config-section">
+                            <h4>🔑 API Configuration</h4>
+                            <div class="form-group">
+                                <label for="openai-api-key">OpenAI API Key:</label>
+                                <input type="password" id="openai-api-key" name="openai_api_key" placeholder="sk-...">
+                                <small class="help-text">
+                                    <a href="https://platform.openai.com/api-keys" target="_blank">Get your API key from OpenAI</a>
+                                    | Required for AI vision analysis
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="config-section">
+                            <h4>⚡ Automation Speed & Timing</h4>
+                            <div class="form-group">
+                                <label for="automation-speed">Automation Speed:</label>
+                                <input type="range" id="automation-speed" name="automation_speed" min="0.1" max="3.0" step="0.1" value="1.0">
+                                <span class="range-value" id="speed-value">1.0x</span>
+                                <small class="help-text">0.1x (Very Slow) → 3.0x (Very Fast)</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="screenshot-delay">Screenshot Delay (seconds):</label>
+                                <input type="number" id="screenshot-delay" name="screenshot_delay" min="0.1" max="10" step="0.1" value="1.0">
+                            </div>
+                            <div class="form-group">
+                                <label for="click-delay">Click Delay (seconds):</label>
+                                <input type="number" id="click-delay" name="click_delay" min="0.1" max="5" step="0.1" value="0.5">
+                            </div>
+                        </div>
+
+                        <div class="config-section">
+                            <h4>🛡️ Safety & Error Handling</h4>
+                            <div class="form-group">
+                                <label for="max-retries">Max Retries:</label>
+                                <input type="number" id="max-retries" name="max_retries" min="1" max="10" value="3">
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="failsafe-enabled" name="failsafe_enabled" checked>
+                                <label for="failsafe-enabled">Enable PyAutoGUI Failsafe (move mouse to corner to stop)</label>
+                            </div>
+                        </div>
+
+                        <div class="config-section">
+                            <h4>📸 Screenshot & Logging</h4>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="auto-save-screenshots" name="auto_save_screenshots" checked>
+                                <label for="auto-save-screenshots">Auto-save screenshots</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="log-level">Log Level:</label>
+                                <select id="log-level" name="log_level">
+                                    <option value="DEBUG">Debug (Most Verbose)</option>
+                                    <option value="INFO" selected>Info (Recommended)</option>
+                                    <option value="WARNING">Warning</option>
+                                    <option value="ERROR">Error (Least Verbose)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="config-section">
+                            <h4>🤖 AI Vision Settings</h4>
+                            <div class="form-group">
+                                <label for="vision-model">Vision Model:</label>
+                                <select id="vision-model" name="vision_model">
+                                    <option value="gpt-4o" selected>GPT-4o (Recommended)</option>
+                                    <option value="gpt-4-vision-preview">GPT-4 Vision Preview</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="vision-timeout">Vision API Timeout (seconds):</label>
+                                <input type="number" id="vision-timeout" name="vision_timeout" min="10" max="120" value="30">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="saveConfiguration()">💾 Save Settings</button>
+                    <button class="btn btn-warning" onclick="resetConfiguration()">🔄 Reset to Defaults</button>
+                    <button class="btn btn-secondary" onclick="closeConfigModal()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Progressive Desktop Automation Challenge System | 
+           Powered by AI Vision & PyAutoGUI | 
+           <a href="/api/health" target="_blank" style="color: rgba(255,255,255,0.8);">System Health</a>
+        </p>
+    </footer>
+
+    <!-- Toast Notifications Container -->
+    <div id="alerts-container"></div>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+    <!-- Additional JavaScript for modal functionality -->
+    <script>
+        function openChallengeModal(level) {
+            const modal = document.getElementById('challenge-modal');
+            const title = document.getElementById('modal-title');
+            const body = document.getElementById('modal-body');
+            
+            title.textContent = `Challenge Level ${level} Details`;
+            body.innerHTML = '<div class="loading"></div>Loading challenge details...';
+            
+            // Fetch challenge details
+            fetch(`/api/challenge/${level}/status`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const status = data.status;
+                        body.innerHTML = `
+                            <div class="challenge-detail">
+                                <h4>${status.name}</h4>
+                                <p><strong>Description:</strong> ${status.description}</p>
+                                <p><strong>Status:</strong> ${status.status}</p>
+                                <p><strong>Progress:</strong> ${status.current_step}/${status.total_steps} steps</p>
+                                <p><strong>Success Count:</strong> ${status.success_count}</p>
+                                <p><strong>Failure Count:</strong> ${status.failure_count}</p>
+                                <p><strong>Last Run:</strong> ${status.last_run ? new Date(status.last_run * 1000).toLocaleString() : 'Never'}</p>
+                                ${status.last_error ? `<p><strong>Last Error:</strong> ${status.last_error}</p>` : ''}
+                                <p><strong>Prerequisites:</strong> ${status.prerequisites.length > 0 ? 'Level ' + status.prerequisites.join(', ') : 'None'}</p>
+                            </div>
+                        `;
+                    } else {
+                        body.innerHTML = `<p class="error">Error loading challenge details: ${data.error}</p>`;
+                    }
+                })
+                .catch(error => {
+                    body.innerHTML = `<p class="error">Error: ${error.message}</p>`;
+                });
+            
+            modal.style.display = 'block';
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('challenge-modal');
+            modal.style.display = 'none';
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('challenge-modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            // Escape key closes modal
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+            
+            // F5 key refreshes data
+            if (e.key === 'F5') {
+                e.preventDefault();
+                if (window.dashboard) {
+                    window.dashboard.refreshAllData();
+                }
+            }
+        });
+        
+        // Enhanced challenge action buttons
+        function startChallenge(level) {
+            if (window.dashboard) {
+                window.dashboard.startChallenge(level);
+            }
+        }
+        
+        function showChallengeStatus(level) {
+            openChallengeModal(level);
+        }
+        
+        function resetChallenge(level) {
+            if (window.dashboard) {
+                window.dashboard.resetChallenge(level);
+            }
+        }
+        
+        // Configuration modal functions
+        function openConfigModal() {
+            const modal = document.getElementById('config-modal');
+            loadCurrentConfiguration();
+            modal.style.display = 'block';
+        }
+        
+        function closeConfigModal() {
+            const modal = document.getElementById('config-modal');
+            modal.style.display = 'none';
+        }
+        
+        async function loadCurrentConfiguration() {
+            try {
+                const response = await fetch('/api/config');
+                const config = await response.json();
+                
+                // Populate form fields
+                document.getElementById('openai-api-key').value = config.openai_api_key || '';
+                document.getElementById('automation-speed').value = config.automation_speed || 1.0;
+                document.getElementById('speed-value').textContent = (config.automation_speed || 1.0) + 'x';
+                document.getElementById('screenshot-delay').value = config.screenshot_delay || 1.0;
+                document.getElementById('click-delay').value = config.click_delay || 0.5;
+                document.getElementById('max-retries').value = config.max_retries || 3;
+                document.getElementById('failsafe-enabled').checked = config.failsafe_enabled !== false;
+                document.getElementById('auto-save-screenshots').checked = config.auto_save_screenshots !== false;
+                document.getElementById('log-level').value = config.log_level || 'INFO';
+                document.getElementById('vision-model').value = config.vision_model || 'gpt-4o';
+                document.getElementById('vision-timeout').value = config.vision_timeout || 30;
+            } catch (error) {
+                console.error('Failed to load configuration:', error);
+            }
+        }
+        
+        async function saveConfiguration() {
+            const form = document.getElementById('config-form');
+            const formData = new FormData(form);
+            const config = {};
+            
+            for (let [key, value] of formData.entries()) {
+                if (key === 'automation_speed' || key === 'screenshot_delay' || key === 'click_delay' || key === 'vision_timeout') {
+                    config[key] = parseFloat(value);
+                } else if (key === 'max_retries') {
+                    config[key] = parseInt(value);
+                } else if (key === 'failsafe_enabled' || key === 'auto_save_screenshots') {
+                    config[key] = true;
+                } else {
+                    config[key] = value;
+                }
+            }
+            
+            // Handle unchecked checkboxes
+            if (!formData.has('failsafe_enabled')) config.failsafe_enabled = false;
+            if (!formData.has('auto_save_screenshots')) config.auto_save_screenshots = false;
+            
+            try {
+                const response = await fetch('/api/config', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(config)
+                });
+                
+                const result = await response.json();
+                if (result.success) {
+                    if (window.dashboard) {
+                        window.dashboard.showAlert('Configuration saved successfully!', 'success');
+                    }
+                    closeConfigModal();
+                } else {
+                    if (window.dashboard) {
+                        window.dashboard.showAlert('Failed to save: ' + result.error, 'error');
+                    }
+                }
+            } catch (error) {
+                if (window.dashboard) {
+                    window.dashboard.showAlert('Error saving configuration: ' + error.message, 'error');
+                }
+            }
+        }
+        
+        async function resetConfiguration() {
+            if (confirm('Reset all settings to defaults? This cannot be undone.')) {
+                try {
+                    const response = await fetch('/api/config/reset', { method: 'POST' });
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        loadCurrentConfiguration();
+                        if (window.dashboard) {
+                            window.dashboard.showAlert('Configuration reset to defaults', 'success');
+                        }
+                    } else {
+                        if (window.dashboard) {
+                            window.dashboard.showAlert('Failed to reset: ' + result.error, 'error');
+                        }
+                    }
+                } catch (error) {
+                    if (window.dashboard) {
+                        window.dashboard.showAlert('Error resetting configuration: ' + error.message, 'error');
+                    }
+                }
+            }
+        }
+
+        // System controls
+        document.addEventListener('DOMContentLoaded', function() {
+            // Configuration button
+            const configBtn = document.getElementById('config-settings');
+            if (configBtn) {
+                configBtn.addEventListener('click', openConfigModal);
+            }
+            
+            // Speed slider real-time update
+            const speedSlider = document.getElementById('automation-speed');
+            const speedValue = document.getElementById('speed-value');
+            if (speedSlider && speedValue) {
+                speedSlider.addEventListener('input', function() {
+                    speedValue.textContent = this.value + 'x';
+                });
+            }
+            
+            // Pause execution button
+            const pauseBtn = document.getElementById('pause-execution');
+            if (pauseBtn) {
+                pauseBtn.addEventListener('click', async function() {
+                    try {
+                        const response = await fetch('/api/execution/pause', { method: 'POST' });
+                        const data = await response.json();
+                        
+                        if (data.success) {
+                            if (window.dashboard) {
+                                window.dashboard.showAlert('Execution paused', 'success');
+                            }
+                            pauseBtn.textContent = '▶ Resume';
+                            pauseBtn.onclick = resumeExecution;
+                        } else {
+                            if (window.dashboard) {
+                                window.dashboard.showAlert('Failed to pause: ' + data.error, 'error');
+                            }
+                        }
+                    } catch (error) {
+                        if (window.dashboard) {
+                            window.dashboard.showAlert('Error: ' + error.message, 'error');
+                        }
+                    }
+                });
+            }
+        });
+        
+        async function resumeExecution() {
+            try {
+                const response = await fetch('/api/execution/resume', { method: 'POST' });
+                const data = await response.json();
+                
+                if (data.success) {
+                    if (window.dashboard) {
+                        window.dashboard.showAlert('Execution resumed', 'success');
+                    }
+                    const pauseBtn = document.getElementById('pause-execution');
+                    pauseBtn.textContent = '⏸ Pause';
+                    pauseBtn.onclick = null;
+                    // Re-add original event listener
+                    location.reload(); // Simple reload to reset button state
+                } else {
+                    if (window.dashboard) {
+                        window.dashboard.showAlert('Failed to resume: ' + data.error, 'error');
+                    }
+                }
+            } catch (error) {
+                if (window.dashboard) {
+                    window.dashboard.showAlert('Error: ' + error.message, 'error');
+                }
+            }
+        }
+    </script>
+    
+    <!-- CSS for modal -->
+    <style>
+        .modal {
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 0;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: modalSlideIn 0.3s ease;
+        }
+        
+        @keyframes modalSlideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .modal-header {
+            padding: 20px 25px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .modal-header h3 {
+            margin: 0;
+            font-size: 1.3em;
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            color: white;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        
+        .modal-close:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        .modal-body {
+            padding: 25px;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+        
+        .modal-footer {
+            padding: 15px 25px;
+            border-top: 1px solid #eee;
+            text-align: right;
+            border-radius: 0 0 15px 15px;
+            background-color: #f8f9fa;
+        }
+        
+        .challenge-detail h4 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        .challenge-detail p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .challenge-detail strong {
+            color: #34495e;
+        }
+        
+        .error {
+            color: #e74c3c;
+            font-style: italic;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            transform: scale(1.2);
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stat-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</body>
+</html>
+

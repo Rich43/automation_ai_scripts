@@ -1,0 +1,32 @@
+2025-07-21 19:09:08 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-21 19:09:08 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-21 19:09:08 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-21 19:09:08 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-21 19:09:08 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-21 19:09:08 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-21 19:09:08 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-21 19:09:09 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-21 19:09:09 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-21 19:09:09 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-21 19:09:09 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-21 19:09:09 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-21 19:09:09 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-21 19:09:09 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-21 19:09:09 | Challenge1 | INFO | __init__:33 | Initialized challenge: System Detection
+2025-07-21 19:09:09 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-21 19:09:09 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 1: Level1SystemDetection
+2025-07-21 19:09:09 | Challenge2 | INFO | __init__:33 | Initialized challenge: Software Installation
+2025-07-21 19:09:09 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-21 19:09:09 | software_installer | INFO | __init__:60 | Software installer initialized
+2025-07-21 19:09:09 | challenge_manager | INFO | _load_challenges:39 | Loaded challenge level 2: Level2SoftwareInstallation
+2025-07-21 19:09:09 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level3_application_launch.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-21 19:09:09 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level4_ui_navigation.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-21 19:09:09 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level5_complex_tasks.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-21 19:09:09 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level6_file_management.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-21 19:09:09 | challenge_manager | ERROR | _load_challenges:42 | Failed to load challenge challenges/level7_advanced_operations.py: ~/.Xauthority: [Errno 2] No such file or directory: '/home/runner/.Xauthority'
+2025-07-21 19:09:09 | challenge_manager | INFO | __init__:20 | Challenge manager initialized with 2 challenges
+2025-07-21 19:09:09 | __main__ | INFO | <module>:146 | Starting Progressive Desktop Automation Challenge System
+2025-07-21 19:09:10 | system_detector | INFO | __init__:23 | System detector initialized for platform: linux
+2025-07-21 19:09:11 | system_detector | INFO | is_software_installed:81 | Git found in PATH
+2025-07-21 19:09:11 | system_detector | INFO | is_software_installed:81 | Python found in PATH
+2025-07-21 19:09:11 | system_detector | INFO | is_software_installed:81 | Visual Studio Code found in PATH

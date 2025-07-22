@@ -62,3 +62,39 @@ def test_hash_and_relative_time():
     assert len(h) == 64
     now = time.time()
     assert get_relative_time(now) == "0 seconds ago"
+
+
+from utils import (
+    ensure_directory,
+    generate_unique_id,
+    run_command,
+    create_backup_filename,
+)
+
+
+def test_ensure_directory(tmp_path):
+    path = tmp_path / "subdir"
+    result = ensure_directory(path)
+    assert result.exists()
+    assert result.is_dir()
+
+
+def test_generate_unique_id_unique():
+    first = generate_unique_id()
+    second = generate_unique_id()
+    assert first != second
+
+
+def test_run_command_success():
+    result = run_command(["echo", "hello"])
+    assert result["success"] is True
+    assert "hello" in result["stdout"]
+
+
+def test_create_backup_filename(tmp_path):
+    original = tmp_path / "file.txt"
+    original.write_text("x")
+    backup = create_backup_filename(original)
+    assert backup.parent == tmp_path
+    assert backup.name.startswith("file_backup_")
+    assert backup.suffix == ".txt"

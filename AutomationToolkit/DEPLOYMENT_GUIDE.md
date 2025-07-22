@@ -17,11 +17,9 @@ Alternatively, run the platform-specific install script to automatically set up
 a virtual environment and create a convenient `run_*.{bat,sh}` launcher:
 `install_windows.bat`, `install_mac.sh`, or `install_linux.sh`.
 
-### 3. Set Up OpenAI API Key
-Create a `.env` file:
-```
-OPENAI_API_KEY=your_openai_api_key_here
-```
+### 3. Configure OpenAI API Key
+Launch the application and open the **Settings** dialog. Paste your key there to
+enable OpenAI features. The old `.env` file approach is no longer required.
 
 ### 4. Run the System
 ```bash
@@ -83,10 +81,10 @@ The system can be extended to automate:
 
 ## Getting OpenAI API Key
 1. Go to https://platform.openai.com/
-2. Create account or sign in
-3. Navigate to API Keys section
-4. Create new secret key
-5. Copy the key to your `.env` file
+2. Create an account or sign in
+3. Navigate to the **API Keys** section
+4. Create a new secret key
+5. Paste the key into the application's **Settings** dialog
 
 ## Troubleshooting
 - Make sure you have a graphical desktop environment
